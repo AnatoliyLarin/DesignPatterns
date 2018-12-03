@@ -1,4 +1,4 @@
-package training.patterns.factory;
+package training.patterns.strategy;
 
 public class Add implements Operations {
 
