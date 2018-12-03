@@ -1,6 +1,7 @@
 package app;
 
 import training.patterns.strategy.Operations;
+import training.patterns.factory.*;
 
 public class Calculator {
 
