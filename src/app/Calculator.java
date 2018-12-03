@@ -1,5 +1,7 @@
 package app;
 
+import training.patterns.strategy.Operations;
+
 public class Calculator {
 
     public Operations operand;

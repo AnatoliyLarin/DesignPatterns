@@ -1,6 +1,7 @@
-import
+import app.*;
+import training.patterns.strategy.*;
 
-public class TestCalculator{
+public class TestCalculatorStrategy{
     public static void main(String[] args) {
 
         Calculator calc1 = new Calculator(new Add());
