@@ -1,11 +1,10 @@
 package app;
 
 import training.patterns.strategy.Operations;
-import training.patterns.factory.*;
 
 public class Calculator {
 
-    public Operations operand;
+    private Operations operand;
 
     public Calculator(Operations choosenOperation){
         this.operand = choosenOperation;
