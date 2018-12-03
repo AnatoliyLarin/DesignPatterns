@@ -1,3 +1,5 @@
+package training.patterns.factory;
+
 public class Extent implements Operations {
 
     @Override

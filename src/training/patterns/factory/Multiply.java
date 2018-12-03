@@ -1,3 +1,5 @@
+package training.patterns.factory;
+
 public class Multiply implements Operations {
 
     @Override

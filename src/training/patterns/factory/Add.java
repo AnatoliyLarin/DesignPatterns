@@ -1,3 +1,5 @@
+package training.patterns.factory;
+
 public class Add implements Operations {
 
     @Override
