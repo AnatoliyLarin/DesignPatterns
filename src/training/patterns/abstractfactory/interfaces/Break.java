@@ -1,4 +1,4 @@
-package training.patterns.abstractfactory;
+package training.patterns.abstractfactory.interfaces;
 
 public interface Break {
 
