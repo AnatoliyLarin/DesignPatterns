@@ -5,17 +5,26 @@ import training.patterns.abstractfactory.interfaces.*;
 public class TeslaAutoPartsFactory implements AutoPartsFactory {
 
     @Override
-    public Gear createGear() {
+    public Gear createGear(String gearType) {
+        if(gearType == null){
+            return null;
+        }
         return null;
     }
 
     @Override
-    public Break createBreak() {
+    public Break createBreak(String breakType) {
+        if(breakType == null){
+            return null;
+        }
         return null;
     }
 
     @Override
-    public Wheel createWheel() {
+    public Wheel createWheel(String wheelType) {
+        if(wheelType == null){
+            return null;
+        }
         return null;
     }
 }

@@ -4,15 +4,27 @@ import training.patterns.abstractfactory.interfaces.*;
 
 public class BMWAutoPartsFactory implements AutoPartsFactory {
 
-    public Gear createGear(){
+    @Override
+    public Gear createGear(String gearType){
+        if(gearType == null) {
+            return null;
+        }
         return null;
     }
 
-    public Break createBreak(){
+    @Override
+    public Break createBreak(String breakType){
+        if(breakType == null){
+            return null;
+        }
         return null;
     }
 
-    public Wheel createWheel(){
+    @Override
+    public Wheel createWheel(String wheelType){
+        if(wheelType == null){
+            return null;
+        }
         return null;
     }
 }
