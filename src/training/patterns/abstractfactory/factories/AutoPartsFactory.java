@@ -1,4 +1,4 @@
-package training.patterns.abstractfactory.factory;
+package training.patterns.abstractfactory.factories;
 
 import training.patterns.abstractfactory.interfaces.*;
 

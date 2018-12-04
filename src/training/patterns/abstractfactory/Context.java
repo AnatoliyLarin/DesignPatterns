@@ -1,14 +1,15 @@
 package training.patterns.abstractfactory;
 
-import training.patterns.abstractfactory.factory.AutoPartsFactory;
-import training.patterns.abstractfactory.factory.BMWAutoPartsFactory;
-import training.patterns.abstractfactory.factory.TeslaAutoPartsFactory;
+import training.patterns.abstractfactory.factories.*;
 
 public class Context {
     public AutoPartsFactory getFactory(String autoBrand){
-        if(autoBrand == "BMW"){
+        if(autoBrand == null){
+            return null;
+        }
+        if(autoBrand.equalsIgnoreCase("BMW")){
             return new BMWAutoPartsFactory();
-        } else if (autoBrand == "Tesla"){
+        } else if (autoBrand.equalsIgnoreCase("Tesla")){
             return new TeslaAutoPartsFactory();
         }
        return null;
