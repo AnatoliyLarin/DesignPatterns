@@ -1,8 +1,6 @@
 package training.patterns.abstractfactory.factory;
 
-import training.patterns.abstractfactory.interfaces.Break;
-import training.patterns.abstractfactory.interfaces.Gear;
-import training.patterns.abstractfactory.interfaces.Wheel;
+import training.patterns.abstractfactory.interfaces.*;
 
 public interface AutoPartsFactory {
 
