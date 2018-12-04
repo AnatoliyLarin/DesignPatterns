@@ -2,5 +2,5 @@ package training.patterns.abstractfactory.interfaces;
 
 public interface Break {
 
-    public Object stop();
+    public String stop();
 }
