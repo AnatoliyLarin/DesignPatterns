@@ -18,6 +18,6 @@ public class TestAssembleLine {
 
         System.out.println("Break type: " + breakType.stop());
         System.out.println("Gear type: " + gearType.run());
-        System.out.println("Wheel type:" + wheelType.run());
+        System.out.println("Wheel type: " + wheelType.run());
     }
 }
