@@ -4,7 +4,7 @@ public class TitaniumWheel implements Wheel {
 
     @Override
     public String run(){
-        String autoPartName = "TitaniumWheel";
+        String autoPartName = "Titanium Wheel";
         return autoPartName;
     }
 }
