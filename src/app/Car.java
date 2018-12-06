@@ -1,7 +1,6 @@
 package app;
 
 import training.patterns.abstractfactory.interfaces.*;
-import training.patterns.builder.CarBuilder;
 
 public class Car {
 
