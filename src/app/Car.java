@@ -1,11 +1,11 @@
 package app;
 
 import training.patterns.abstractfactory.interfaces.*;
-import training.patterns.builder.CarsBuilder;
+import training.patterns.builder.CarBuilder;
 
-public class Cars {
+public class Car {
 
-    private CarsBuilder carsBuilder;
+    //private CarBuilder carBuilder;
 
     private Gear gearType;
     private Wheel wheelType;
@@ -17,7 +17,7 @@ public class Cars {
     private int width;
     private int height;
 
-    public Cars(Gear gearType, Wheel wheelType, Break breakType, int maxSpeed, String color, boolean hasAirCondition, int numberOfSeats, int width, int height) {
+    public Car(Gear gearType, Wheel wheelType, Break breakType, int maxSpeed, String color, boolean hasAirCondition, int numberOfSeats, int width, int height) {
         this.gearType = gearType;
         this.wheelType = wheelType;
         this.breakType = breakType;
@@ -27,9 +27,6 @@ public class Cars {
         this.numberOfSeats = numberOfSeats;
         this.width = width;
         this.height = height;
-    }
-
-    public Cars(CarsBuilder carsBuilder) {
     }
 
     //Getters
@@ -72,40 +69,39 @@ public class Cars {
 
     // Setters
 
-
-    public void setGearType(Gear gearType) {
+    public void withGearType(Gear gearType) {
         this.gearType = gearType;
     }
 
-    public void setWheelType(Wheel wheelType) {
+    public void withWheelType(Wheel wheelType) {
         this.wheelType = wheelType;
     }
 
-    public void setBreakType(Break breakType) {
+    public void withBreakType(Break breakType) {
         this.breakType = breakType;
     }
 
-    public void setMaxSpeed(int maxSpeed) {
+    public void withMaxSpeed(int maxSpeed) {
         this.maxSpeed = maxSpeed;
     }
 
-    public void setColor(String color) {
+    public void bodyColor(String color) {
         this.color = color;
     }
 
-    public void setHasAirCondition(boolean hasAirCondition) {
+    public void hasAirCondition(boolean hasAirCondition) {
         this.hasAirCondition = hasAirCondition;
     }
 
-    public void setNumberOfSeats(int numberOfSeats) {
+    public void numberOfSeats(int numberOfSeats) {
         this.numberOfSeats = numberOfSeats;
     }
 
-    public void setWidth(int width) {
+    public void bodyWidth(int width) {
         this.width = width;
     }
 
-    public void setHeight(int height) {
+    public void bodyHeight(int height) {
         this.height = height;
     }
 }

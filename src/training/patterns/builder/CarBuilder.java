@@ -1,9 +1,9 @@
 package training.patterns.builder;
 
-import app.Cars;
+import app.Car;
 import training.patterns.abstractfactory.interfaces.*;
 
-public class CarsBuilder {
+public class CarBuilder {
 
     private Gear gearType;
     private Wheel wheelType;
@@ -15,52 +15,52 @@ public class CarsBuilder {
     private int width;
     private int height;
 
-    public CarsBuilder setGearType(Gear gearType) {
+    public CarBuilder withGearType(Gear gearType) {
         this.gearType = gearType;
         return this;
     }
 
-    public CarsBuilder setWheelType(Wheel wheelType) {
+    public CarBuilder withWheelType(Wheel wheelType) {
         this.wheelType = wheelType;
         return this;
     }
 
-    public CarsBuilder setBreakType(Break breakType) {
+    public CarBuilder withBreakType(Break breakType) {
         this.breakType = breakType;
         return this;
     }
 
-    public CarsBuilder setMaxSpeed(int maxSpeed) {
+    public CarBuilder withMaxSpeed(int maxSpeed) {
         this.maxSpeed = maxSpeed;
          return this;
     }
 
-    public CarsBuilder setColor(String color) {
+    public CarBuilder bodyColor(String color) {
         this.color = color;
         return this;
     }
 
-    public CarsBuilder setHasAirCondition(boolean hasAirCondition) {
+    public CarBuilder hasAirCondition(boolean hasAirCondition) {
         this.hasAirCondition = hasAirCondition;
         return this;
     }
 
-    public CarsBuilder setNumberOfSeats(int numberOfSeats) {
+    public CarBuilder numberOfSeats(int numberOfSeats) {
         this.numberOfSeats = numberOfSeats;
         return this;
     }
 
-    public CarsBuilder setWidth(int width) {
+    public CarBuilder bodyWidth(int width) {
         this.width = width;
         return this;
     }
 
-    public CarsBuilder setHeight(int height) {
+    public CarBuilder bodyHeight(int height) {
         this.height = height;
         return this;
     }
 
-    public Cars build(){
-        return new Cars(this);
+    public Car build(){
+        return new Car(gearType, wheelType, breakType, maxSpeed, color, hasAirCondition, numberOfSeats, width, height);
     }
 }
