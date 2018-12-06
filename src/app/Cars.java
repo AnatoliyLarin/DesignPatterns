@@ -1,8 +1,11 @@
 package app;
 
 import training.patterns.abstractfactory.interfaces.*;
+import training.patterns.builder.CarsBuilder;
 
 public class Cars {
+
+    private CarsBuilder carsBuilder;
 
     private Gear gearType;
     private Wheel wheelType;
@@ -24,6 +27,9 @@ public class Cars {
         this.numberOfSeats = numberOfSeats;
         this.width = width;
         this.height = height;
+    }
+
+    public Cars(CarsBuilder carsBuilder) {
     }
 
     //Getters

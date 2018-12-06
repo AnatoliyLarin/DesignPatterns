@@ -61,6 +61,6 @@ public class CarsBuilder {
     }
 
     public Cars build(){
-        return new Cars();
+        return new Cars(this);
     }
 }
