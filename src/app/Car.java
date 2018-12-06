@@ -5,8 +5,6 @@ import training.patterns.builder.CarBuilder;
 
 public class Car {
 
-    //private CarBuilder carBuilder;
-
     private Gear gearType;
     private Wheel wheelType;
     private Break breakType;
