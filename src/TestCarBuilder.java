@@ -9,7 +9,8 @@ public class TestCarBuilder {
         CarBuilder carBuilder = new CarBuilder();
         Context factory = new Context();
 
-        Car car = carBuilder.withBreakType(factory.getFactory("Tesla").createBreak(("Soft")))
+        Car car = carBuilder
+                .withBreakType(factory.getFactory("Tesla").createBreak(("Soft")))
                 .bodyColor("Green")
                 .hasAirCondition(true)
                 .withGearType(factory.getFactory("Tesla").createGear(("Winter")))
