@@ -63,42 +63,4 @@ public class Car {
     public int getHeight() {
         return height;
     }
-
-    // Setters
-
-    public void withGearType(Gear gearType) {
-        this.gearType = gearType;
-    }
-
-    public void withWheelType(Wheel wheelType) {
-        this.wheelType = wheelType;
-    }
-
-    public void withBreakType(Break breakType) {
-        this.breakType = breakType;
-    }
-
-    public void withMaxSpeed(int maxSpeed) {
-        this.maxSpeed = maxSpeed;
-    }
-
-    public void bodyColor(String color) {
-        this.color = color;
-    }
-
-    public void hasAirCondition(boolean hasAirCondition) {
-        this.hasAirCondition = hasAirCondition;
-    }
-
-    public void numberOfSeats(int numberOfSeats) {
-        this.numberOfSeats = numberOfSeats;
-    }
-
-    public void bodyWidth(int width) {
-        this.width = width;
-    }
-
-    public void bodyHeight(int height) {
-        this.height = height;
-    }
 }
