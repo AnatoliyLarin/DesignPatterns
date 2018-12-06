@@ -1,5 +1,6 @@
 package training.patterns.builder;
 
+import app.Cars;
 import training.patterns.abstractfactory.interfaces.*;
 
 public class CarsBuilder {
@@ -57,5 +58,9 @@ public class CarsBuilder {
     public CarsBuilder setHeight(int height) {
         this.height = height;
         return this;
+    }
+
+    public Cars build(){
+        return new Cars();
     }
 }
