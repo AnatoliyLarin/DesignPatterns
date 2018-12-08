@@ -2,6 +2,9 @@ package training.core.abstractFactory.factories;
 
 import training.core.abstractFactory.interfaces.*;
 
+import java.util.NoSuchElementException;
+import java.util.concurrent.ExecutionException;
+
 public class BMWAutoPartsFactory implements AutoPartsFactory {
 
     @Override
@@ -11,7 +14,8 @@ public class BMWAutoPartsFactory implements AutoPartsFactory {
         } else if(gearType.equalsIgnoreCase("Summer")){
             return new SummerGear();
         }
-        return null;
+//        return null;
+        throw new NoSuchElementException("The part doesn't exist.");
     }
 
     @Override
@@ -21,7 +25,8 @@ public class BMWAutoPartsFactory implements AutoPartsFactory {
         } else if(breakType.equalsIgnoreCase("Soft")){
             return new SoftBreak();
         }
-        return null;
+//        return null;
+        throw new NoSuchElementException("The part doesn't exist.");
     }
 
     @Override
@@ -31,6 +36,7 @@ public class BMWAutoPartsFactory implements AutoPartsFactory {
         } else if(wheelType.equalsIgnoreCase("Titan")){
             return new TitaniumWheel();
         }
-        return null;
+//        return null;
+        throw new NoSuchElementException("The part doesn't exist.");
     }
 }

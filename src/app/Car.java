@@ -38,44 +38,6 @@ public class Car {
         this.height = carToBuild.height;
     }
 
-    //Getters
-
-    public Gear getGearType() {
-        return gearType;
-    }
-
-    public Wheel getWheelType() {
-        return wheelType;
-    }
-
-    public Break getBreakType() {
-        return breakType;
-    }
-
-    public int getMaxSpeed() {
-        return maxSpeed;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public boolean isHasAirCondition() {
-        return hasAirCondition;
-    }
-
-    public int getNumberOfSeats() {
-        return numberOfSeats;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
     public static class Builder{
         private Gear gearType;
         private Wheel wheelType;
@@ -135,5 +97,43 @@ public class Car {
         public Car build(){
            return new Car(this);
         }
+    }
+
+    //Getters
+
+    public Gear getGearType() {
+        return gearType;
+    }
+
+    public Wheel getWheelType() {
+        return wheelType;
+    }
+
+    public Break getBreakType() {
+        return breakType;
+    }
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public boolean isHasAirCondition() {
+        return hasAirCondition;
+    }
+
+    public int getNumberOfSeats() {
+        return numberOfSeats;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
     }
 }
