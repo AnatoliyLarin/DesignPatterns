@@ -1,7 +1,7 @@
 import app.AssembleLine;
 
-import training.patterns.abstractfactory.interfaces.*;
-import training.patterns.abstractfactory.Context;
+import training.core.abstractFactory.interfaces.*;
+import training.core.abstractFactory.Context;
 
 public class TestAssembleLine {
 

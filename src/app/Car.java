@@ -1,6 +1,6 @@
 package app;
 
-import training.patterns.abstractfactory.interfaces.*;
+import training.core.abstractFactory.interfaces.*;
 
 public class Car {
 
@@ -14,7 +14,7 @@ public class Car {
     private int width;
     private int height;
 
-    public Car(Gear gearType, Wheel wheelType, Break breakType, int maxSpeed, String color, boolean hasAirCondition, int numberOfSeats, int width, int height) {
+/*    public Car(Gear gearType, Wheel wheelType, Break breakType, int maxSpeed, String color, boolean hasAirCondition, int numberOfSeats, int width, int height) {
         this.gearType = gearType;
         this.wheelType = wheelType;
         this.breakType = breakType;
@@ -24,6 +24,18 @@ public class Car {
         this.numberOfSeats = numberOfSeats;
         this.width = width;
         this.height = height;
+    }*/
+
+    private Car(Builder carToBuild){
+        this.gearType = carToBuild.gearType;
+        this.wheelType = carToBuild.wheelType;
+        this.breakType = carToBuild.breakType;
+        this.maxSpeed = carToBuild.maxSpeed;
+        this.color = carToBuild.color;
+        this.hasAirCondition = carToBuild.hasAirCondition;
+        this.numberOfSeats = carToBuild.numberOfSeats;
+        this.width = carToBuild.width;
+        this.height = carToBuild.height;
     }
 
     //Getters
@@ -62,5 +74,66 @@ public class Car {
 
     public int getHeight() {
         return height;
+    }
+
+    public static class Builder{
+        private Gear gearType;
+        private Wheel wheelType;
+        private Break breakType;
+        private int maxSpeed;
+        private String color;
+        private boolean hasAirCondition;
+        private int numberOfSeats;
+        private int width;
+        private int height;
+
+        public Builder withGearType(Gear gearType) {
+            this.gearType = gearType;
+            return this;
+        }
+
+        public Builder withWheelType(Wheel wheelType) {
+            this.wheelType = wheelType;
+            return this;
+        }
+
+        public Builder withBreakType(Break breakType) {
+            this.breakType = breakType;
+            return this;
+        }
+
+        public Builder withMaxSpeed(int maxSpeed) {
+            this.maxSpeed = maxSpeed;
+            return this;
+        }
+
+        public Builder bodyColor(String color) {
+            this.color = color;
+            return this;
+        }
+
+        public Builder hasAirCondition(boolean hasAirCondition) {
+            this.hasAirCondition = hasAirCondition;
+            return this;
+        }
+
+        public Builder numberOfSeats(int numberOfSeats) {
+            this.numberOfSeats = numberOfSeats;
+            return this;
+        }
+
+        public Builder bodyWidth(int width) {
+            this.width = width;
+            return this;
+        }
+
+        public Builder bodyHeight(int height) {
+            this.height = height;
+            return this;
+        }
+
+        public Car build(){
+           return new Car(this);
+        }
     }
 }

@@ -1,6 +1,6 @@
-package training.patterns.abstractfactory;
+package training.core.abstractFactory;
 
-import training.patterns.abstractfactory.factories.*;
+import training.core.abstractFactory.factories.*;
 
 public class Context {
     public AutoPartsFactory getFactory(String autoBrand){

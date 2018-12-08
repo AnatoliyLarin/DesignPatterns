@@ -1,5 +1,5 @@
 import app.*;
-import training.patterns.strategy.*;
+import training.core.strategy.*;
 
 public class TestCalculatorStrategy{
     public static void main(String[] args) {

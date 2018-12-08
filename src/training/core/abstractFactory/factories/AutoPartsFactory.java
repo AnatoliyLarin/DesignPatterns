@@ -1,6 +1,6 @@
-package training.patterns.abstractfactory.factories;
+package training.core.abstractFactory.factories;
 
-import training.patterns.abstractfactory.interfaces.*;
+import training.core.abstractFactory.interfaces.*;
 
 public interface AutoPartsFactory {
 

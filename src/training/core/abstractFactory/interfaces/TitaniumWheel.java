@@ -1,4 +1,4 @@
-package training.patterns.abstractfactory.interfaces;
+package training.core.abstractFactory.interfaces;
 
 public class TitaniumWheel implements Wheel {
 

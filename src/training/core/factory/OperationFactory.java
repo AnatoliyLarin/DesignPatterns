@@ -1,8 +1,8 @@
-package training.patterns.factory;
+package training.core.factory;
 
-import training.patterns.strategy.*;
+import training.core.strategy.*;
 
-public class OperationsFactory {
+public class OperationFactory {
 
     public Operations createOperation(String operationType){
         if(operationType == null) {

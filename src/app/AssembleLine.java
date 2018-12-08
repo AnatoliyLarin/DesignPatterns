@@ -1,6 +1,6 @@
 package app;
 
-import training.patterns.abstractfactory.interfaces.*;
+import training.core.abstractFactory.interfaces.*;
 
 public class AssembleLine{
 

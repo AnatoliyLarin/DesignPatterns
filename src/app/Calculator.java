@@ -1,6 +1,6 @@
 package app;
 
-import training.patterns.strategy.Operations;
+import training.core.strategy.Operations;
 
 public class Calculator {
 

@@ -1,15 +1,15 @@
 import app.Car;
-import training.patterns.abstractfactory.Context;
-import training.patterns.builder.CarBuilder;
+import training.core.abstractFactory.Context;
+//import training.core.builder.CarBuilder;
 
 public class TestCarBuilder {
 
     public static void main(String[] args){
 
-        CarBuilder carBuilder = new CarBuilder();
+//        CarBuilder carBuilder = new CarBuilder();
         Context factory = new Context();
 
-        Car car = carBuilder
+        Car car = new Car.Builder()
                 .withBreakType(factory.getFactory("Tesla").createBreak(("Soft")))
                 .bodyColor("Green")
                 .hasAirCondition(true)

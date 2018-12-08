@@ -1,4 +1,4 @@
-package training.patterns.strategy;
+package training.core.strategy;
 
 public class Add implements Operations {
 

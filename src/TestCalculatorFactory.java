@@ -1,10 +1,10 @@
 import app.Calculator;
-import training.patterns.factory.*;
+import training.core.factory.*;
 
 public class TestCalculatorFactory {
     public static void main(String[] args){
 
-        OperationsFactory operationsList  = new OperationsFactory();
+        OperationFactory operationsList  = new OperationFactory();
 
         Calculator calc1 = new Calculator(operationsList.createOperation("Add"));
         float result1= calc1.execute(2,7);

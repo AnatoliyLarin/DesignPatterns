@@ -1,7 +1,7 @@
-package training.patterns.builder;
+package training.core.builder;
 
 import app.Car;
-import training.patterns.abstractfactory.interfaces.*;
+import training.core.abstractFactory.interfaces.*;
 
 public class CarBuilder {
 
@@ -60,7 +60,7 @@ public class CarBuilder {
         return this;
     }
 
-    public Car build(){
+/*    public Car build(){
         return new Car(gearType, wheelType, breakType, maxSpeed, color, hasAirCondition, numberOfSeats, width, height);
-    }
+    }*/
 }
