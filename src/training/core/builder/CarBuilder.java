@@ -60,7 +60,7 @@ public class CarBuilder {
         return this;
     }
 
-/*    public Car build(){
-        return new Car(gearType, wheelType, breakType, maxSpeed, color, hasAirCondition, numberOfSeats, width, height);
-    }*/
+//    public Car build() {
+//        return new Car(gearType, wheelType, breakType, maxSpeed, color, hasAirCondition, numberOfSeats, width, height);
+//    }
 }

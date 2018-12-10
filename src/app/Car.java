@@ -14,18 +14,6 @@ public class Car {
     private int width;
     private int height;
 
-/*    public Car(Gear gearType, Wheel wheelType, Break breakType, int maxSpeed, String color, boolean hasAirCondition, int numberOfSeats, int width, int height) {
-        this.gearType = gearType;
-        this.wheelType = wheelType;
-        this.breakType = breakType;
-        this.maxSpeed = maxSpeed;
-        this.color = color;
-        this.hasAirCondition = hasAirCondition;
-        this.numberOfSeats = numberOfSeats;
-        this.width = width;
-        this.height = height;
-    }*/
-
     private Car(Builder carToBuild){
         this.gearType = carToBuild.gearType;
         this.wheelType = carToBuild.wheelType;

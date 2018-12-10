@@ -6,7 +6,6 @@ public class TestCarBuilder {
 
     public static void main(String[] args){
 
-//        CarBuilder carBuilder = new CarBuilder();
         Context factory = new Context();
 
         Car car = new Car.Builder()
