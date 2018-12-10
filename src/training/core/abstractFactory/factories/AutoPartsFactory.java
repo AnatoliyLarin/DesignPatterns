@@ -4,9 +4,9 @@ import training.core.abstractFactory.interfaces.*;
 
 public interface AutoPartsFactory{
 
-    createGear(String gearType);
+    Gear createGear(String gearType);
 
-    createBreak(String breakType);
+    Break createBreak(String breakType);
 
-    createWheel(String wheelType);
+    Wheel createWheel(String wheelType);
 }
