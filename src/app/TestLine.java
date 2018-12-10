@@ -1,3 +1,5 @@
+package app;
+
 import app.Car;
 import training.core.visitor.Visitor;
 
