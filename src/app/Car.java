@@ -14,6 +14,8 @@ public class Car {
     private int width;
     private int height;
 
+    public Car(){}
+
     private Car(Builder carToBuild){
         this.gearType = carToBuild.gearType;
         this.wheelType = carToBuild.wheelType;
