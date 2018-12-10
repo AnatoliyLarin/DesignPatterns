@@ -1,8 +1,10 @@
 package app;
 
 import training.core.abstractFactory.interfaces.*;
+import training.core.visitor.Visitable;
+import training.core.visitor.Visitor;
 
-public class Car {
+public class Car implements Visitable {
 
     private Gear gearType;
     private Wheel wheelType;
@@ -14,8 +16,6 @@ public class Car {
     private int width;
     private int height;
 
-    public Car(){}
-
     private Car(Builder carToBuild){
         this.gearType = carToBuild.gearType;
         this.wheelType = carToBuild.wheelType;
@@ -26,6 +26,11 @@ public class Car {
         this.numberOfSeats = carToBuild.numberOfSeats;
         this.width = carToBuild.width;
         this.height = carToBuild.height;
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
     }
 
     public static class Builder{
