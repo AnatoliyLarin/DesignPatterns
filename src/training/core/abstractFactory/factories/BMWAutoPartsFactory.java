@@ -5,7 +5,7 @@ import training.core.abstractFactory.interfaces.*;
 import java.util.NoSuchElementException;
 import java.util.concurrent.ExecutionException;
 
-public class BMWAutoPartsFactory implements AutoPartsFactory<Gear, Break, Wheel> {
+public class BMWAutoPartsFactory implements AutoPartsFactory {
 
     @Override
     public Gear createGear(String gearType){

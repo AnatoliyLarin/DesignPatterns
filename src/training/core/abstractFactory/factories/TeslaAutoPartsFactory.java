@@ -4,7 +4,7 @@ import training.core.abstractFactory.interfaces.*;
 
 import java.util.NoSuchElementException;
 
-public class TeslaAutoPartsFactory implements AutoPartsFactory<Gear, Break, Wheel> {
+public class TeslaAutoPartsFactory implements AutoPartsFactory {
 
     @Override
     public Gear createGear(String gearType) {
