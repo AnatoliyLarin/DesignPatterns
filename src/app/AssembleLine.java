@@ -12,7 +12,7 @@ public class AssembleLine{
         return breakdown;
     }
 
-    public Wheel assemleWheel(Wheel wheel){
+    public Wheel assembleWheel(Wheel wheel){
         return wheel;
     }
 }

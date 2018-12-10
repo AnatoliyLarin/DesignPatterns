@@ -1,6 +1,5 @@
 import app.Car;
 import training.core.abstractFactory.Context;
-//import training.core.builder.CarBuilder;
 
 public class TestCarBuilder {
 

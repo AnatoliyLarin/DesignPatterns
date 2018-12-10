@@ -6,8 +6,8 @@ public class Calculator {
 
     private Operations operand;
 
-    public Calculator(Operations choosenOperation){
-        this.operand = choosenOperation;
+    public Calculator(Operations chosenOperation){
+        this.operand = chosenOperation;
     }
 
     public float execute(float num1, float num2) {

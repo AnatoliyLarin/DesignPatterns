@@ -12,7 +12,7 @@ public class TestAssembleLine {
 
         Break breakType = assemble.assembleBreak(order.getFactory("Tesla").createBreak("Hard"));
         Gear gearType = assemble.assembleGear(order.getFactory("BMW").createGear("Winter"));
-        Wheel wheelType = assemble.assemleWheel(order.getFactory("Tesla").createWheel("Titan"));
+        Wheel wheelType = assemble.assembleWheel(order.getFactory("Tesla").createWheel("Titan"));
 
         System.out.println("\n");
 
