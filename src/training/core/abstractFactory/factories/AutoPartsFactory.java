@@ -2,11 +2,11 @@ package training.core.abstractFactory.factories;
 
 import training.core.abstractFactory.interfaces.*;
 
-public interface AutoPartsFactory {
+public interface AutoPartsFactory{
 
-    Gear createGear(String gearType);
+    createGear(String gearType);
 
-    Break createBreak(String breakType);
+    createBreak(String breakType);
 
-    Wheel createWheel(String wheelType);
+    createWheel(String wheelType);
 }
