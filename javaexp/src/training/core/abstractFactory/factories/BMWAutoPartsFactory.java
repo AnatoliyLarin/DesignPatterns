@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
 public class BMWAutoPartsFactory implements AutoPartsFactory {
 
     @Override
-    public Gear createGear(String gearType){
+    Gear createGear(String gearType){
         if(gearType.equalsIgnoreCase("Winter")){
             return new WinterGear();
         } else if(gearType.equalsIgnoreCase("Summer")){
@@ -16,7 +16,7 @@ public class BMWAutoPartsFactory implements AutoPartsFactory {
     }
 
     @Override
-    public Break createBreak(String breakType){
+    Break createBreak(String breakType){
         if(breakType.equalsIgnoreCase("Hard")){
             return new HardBreak();
         } else if(breakType.equalsIgnoreCase("Soft")){

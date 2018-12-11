@@ -10,9 +10,8 @@ public class TestLine {
 
     private Set<Car> cars = new HashSet<>();
 
-    public Set<Car> addCar(Car queuedCar) {
+    public void addCar(Car queuedCar) {
         this.cars.add(queuedCar);
-        return this.cars;
     }
 
     public void test(Visitor visit){

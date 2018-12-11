@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/javaexp.iml" filepath="$PROJECT_DIR$/javaexp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaexp_maven/javaexp_maven.iml" filepath="$PROJECT_DIR$/javaexp_maven/javaexp_maven.iml" />
     </modules>
   </component>
 </project>
