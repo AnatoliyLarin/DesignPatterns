@@ -1,6 +1,6 @@
-package training.core.builder;
+package app.patterns.builder;
 
-import training.core.abstractFactory.interfaces.*;
+import app.core.carPlant.interfaces.*;
 
 public class CarBuilder {
 

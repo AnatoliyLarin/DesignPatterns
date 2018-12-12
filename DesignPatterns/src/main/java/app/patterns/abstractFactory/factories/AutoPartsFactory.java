@@ -1,12 +1,12 @@
-package training.core.abstractFactory.factories;
+package app.patterns.abstractFactory.factories;
 
-import training.core.abstractFactory.interfaces.*;
+import app.core.carPlant.interfaces.*;
 
 public interface AutoPartsFactory{
 
-    Gear createGear();
+    Gear createGear(String gearType);
 
-    Break createBreak();
+    Break createBreak(String breakType);
 
-    Wheel createWheel();
+    Wheel createWheel(String wheelType);
 }

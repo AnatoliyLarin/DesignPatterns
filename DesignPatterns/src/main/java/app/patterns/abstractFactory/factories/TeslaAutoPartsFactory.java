@@ -1,10 +1,11 @@
-package training.core.abstractFactory.factories;
+package app.patterns.abstractFactory.factories;
 
-import training.core.abstractFactory.interfaces.*;
+import app.core.carPlant.interfaces.*;
 import java.util.NoSuchElementException;
 
 public class TeslaAutoPartsFactory implements AutoPartsFactory {
 
+    @Override
     public Gear createGear(String gearType) {
         if(gearType.equalsIgnoreCase("Winter")){
             return new WinterGear();
@@ -14,6 +15,7 @@ public class TeslaAutoPartsFactory implements AutoPartsFactory {
         throw new NoSuchElementException("The part doesn't exist.");
     }
 
+    @Override
     public Break createBreak(String breakType) {
         if(breakType.equalsIgnoreCase("Hard")){
             return new HardBreak();
@@ -23,6 +25,7 @@ public class TeslaAutoPartsFactory implements AutoPartsFactory {
         throw new NoSuchElementException("The part doesn't exist.");
     }
 
+    @Override
     public Wheel createWheel(String wheelType) {
         if(wheelType.equalsIgnoreCase("Metal")){
             return new MetalWheel();

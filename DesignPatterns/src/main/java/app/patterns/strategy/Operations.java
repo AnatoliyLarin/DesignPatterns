@@ -1,4 +1,4 @@
-package main.java.app.core.operations;
+package app.patterns.strategy;
 
 public interface Operations {
 

@@ -1,6 +1,6 @@
-package training.core.visitor;
+package app.patterns.visitor;
 
-import java.app.core.carPlant.Car;
+import app.core.carPlant.Car;
 
 public class CarColorTester implements Visitor{
 

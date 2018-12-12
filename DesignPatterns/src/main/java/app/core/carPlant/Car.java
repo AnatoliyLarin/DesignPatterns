@@ -1,8 +1,8 @@
 package app.core.carPlant;
 
+
 import app.core.carPlant.interfaces.*;
-import app.core.visitor.Visitable;
-import app.core.visitor.Visitor;
+import app.patterns.visitor.*;
 
 public class Car implements Visitable {
 

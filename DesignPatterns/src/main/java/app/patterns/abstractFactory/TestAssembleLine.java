@@ -1,9 +1,7 @@
-package java.core.training.abstractFactory;
+package app.patterns.abstractFactory;
 
-import java.app.core.carPlant.AssembleLine;
-
-import training.core.abstractFactory.interfaces.*;
-import training.core.abstractFactory.Context;
+import app.core.carPlant.AssembleLine;
+import app.core.carPlant.interfaces.*;
 
 public class TestAssembleLine {
 

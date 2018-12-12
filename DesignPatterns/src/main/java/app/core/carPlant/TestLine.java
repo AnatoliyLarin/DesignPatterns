@@ -1,7 +1,6 @@
 package app.core.carPlant;
 
-import training.core.visitor.Visitor;
-
+import app.patterns.visitor.Visitor;
 import java.util.HashSet;
 import java.util.Set;
 

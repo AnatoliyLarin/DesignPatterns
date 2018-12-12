@@ -1,7 +1,7 @@
-package training.core.abstractFactory;
+package app.patterns.abstractFactory;
 
-import training.core.abstractFactory.factories.*;
-
+import app.patterns.abstractFactory.factories.AutoPartsFactory;
+import app.patterns.abstractFactory.factories.*;
 import java.util.NoSuchElementException;
 
 public class Context {

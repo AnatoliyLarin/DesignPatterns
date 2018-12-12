@@ -1,6 +1,6 @@
-package app;
+package app.core.operations;
 
-import main.java.app.core.operations.Operations;
+import app.patterns.strategy.Operations;
 
 public class Calculator {
 

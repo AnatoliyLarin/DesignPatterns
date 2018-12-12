@@ -1,4 +1,4 @@
-package training.core.strategy;
+package app.patterns.strategy;
 
 public class Extent implements Operations {
 

@@ -1,7 +1,6 @@
-package java.core.training.factory;
+package app.patterns.factory;
 
-import app.Calculator;
-import training.core.factory.*;
+import app.core.operations.Calculator;
 
 public class TestCalculatorFactory {
     public static void main(String[] args){

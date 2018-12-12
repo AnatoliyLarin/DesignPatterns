@@ -1,6 +1,7 @@
-package training.core.factory;
+package app.patterns.factory;
 
-import training.core.strategy.*;
+import app.patterns.strategy.*;
+import app.patterns.strategy.Operations;
 
 public class OperationFactory {
 

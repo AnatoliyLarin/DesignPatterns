@@ -1,7 +1,6 @@
-package java.core.training.strategy;
+package app.patterns.strategy;
 
-import app.*;
-import training.core.strategy.*;
+import app.core.operations.Calculator;
 
 public class TestCalculatorStrategy{
     public static void main(String[] args) {

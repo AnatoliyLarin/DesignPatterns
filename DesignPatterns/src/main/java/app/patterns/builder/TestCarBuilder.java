@@ -1,7 +1,7 @@
-package java.core.training.builder;
+package app.patterns.builder;
 
-import java.app.core.carPlant.Car;
-import training.core.abstractFactory.Context;
+import app.core.carPlant.Car;
+import app.patterns.abstractFactory.Context;
 
 public class TestCarBuilder {
 
