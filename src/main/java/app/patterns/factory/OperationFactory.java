@@ -2,13 +2,11 @@ package app.patterns.factory;
 
 import app.patterns.strategy.*;
 import app.patterns.strategy.Operations;
+import java.util.NoSuchElementException;
 
 public class OperationFactory {
 
     public Operations createOperation(String operationType){
-        if(operationType == null) {
-            return null;
-        }
         if(operationType.equalsIgnoreCase("Add")){
             return new Add();
         } else if(operationType.equalsIgnoreCase("Multiply")){
@@ -16,6 +14,6 @@ public class OperationFactory {
         } else if(operationType.equalsIgnoreCase("Extent")){
             return new Extent();
         }
-        return null;
+        throw new NoSuchElementException("There is no a such operation.");
     }
 }
