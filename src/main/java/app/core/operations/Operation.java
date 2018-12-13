@@ -1,6 +1,6 @@
-package app.patterns.strategy;
+package app.core.operations;
 
-public interface Operations {
+public interface Operation {
 
         float calculate(float num1, float num2);
 }

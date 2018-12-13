@@ -1,6 +1,8 @@
 package app.patterns.strategy;
 
-public class Add implements Operations {
+import app.core.operations.Operation;
+
+public class Add implements Operation {
 
     @Override
     public float calculate(float num1, float num2) {

@@ -1,12 +1,12 @@
 package app.patterns.factory;
 
 import app.patterns.strategy.*;
-import app.patterns.strategy.Operations;
+import app.core.operations.Operation;
 import java.util.NoSuchElementException;
 
 public class OperationFactory {
 
-    public Operations createOperation(String operationType){
+    public Operation createOperation(String operationType){
         if(operationType.equalsIgnoreCase("Add")){
             return new Add();
         } else if(operationType.equalsIgnoreCase("Multiply")){

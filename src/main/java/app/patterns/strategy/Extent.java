@@ -1,6 +1,8 @@
 package app.patterns.strategy;
 
-public class Extent implements Operations {
+import app.core.operations.Operation;
+
+public class Extent implements Operation {
 
     @Override
     public float calculate(float num1, float num2) {

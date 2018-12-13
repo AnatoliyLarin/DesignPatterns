@@ -1,16 +1,14 @@
 package app.core.operations;
 
-import app.patterns.strategy.Operations;
-
 public class Calculator {
 
-    private Operations operand;
+    private Operation operation;
 
-    public Calculator(Operations chosenOperation){
-        this.operand = chosenOperation;
+    public Calculator(Operation operation){
+        this.operation = operation;
     }
 
     public float execute(float num1, float num2) {
-        return operand.calculate(num1, num2);
+        return operation.calculate(num1, num2);
     }
 }
