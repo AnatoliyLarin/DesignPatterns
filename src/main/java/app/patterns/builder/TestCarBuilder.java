@@ -10,11 +10,11 @@ public class TestCarBuilder {
         Context factory = new Context();
 
         Car car = new Car.Builder()
-                .withBreakType(factory.getFactory("Tesla").createBreak(("Soft")))
+                .withBreakType(factory.getFactory("Tesla").createBreak())
                 .bodyColor("Green")
                 .hasAirCondition(true)
-                .withGearType(factory.getFactory("Tesla").createGear(("Winter")))
-                .withWheelType(factory.getFactory("Tesla").createWheel(("Metal")))
+                .withGearType(factory.getFactory("Tesla").createGear())
+                .withWheelType(factory.getFactory("Tesla").createWheel())
                 .bodyHeight(175)
                 .bodyWidth(350)
                 .withMaxSpeed(175)

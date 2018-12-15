@@ -6,5 +6,5 @@ public class HardBreak implements Break {
     public String stop(){
         String autoPartName = "Hard Break";
         return autoPartName;
-    };
+    }
 }
