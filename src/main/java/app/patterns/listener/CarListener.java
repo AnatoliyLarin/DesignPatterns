@@ -4,5 +4,5 @@ import app.core.carPlant.Car;
 
 public interface CarListener {
 
-    Car onRelease(Car car);
+    void onRelease(Car car);
 }
