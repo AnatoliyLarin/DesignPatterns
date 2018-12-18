@@ -11,9 +11,6 @@ public class CarTestListener implements CarListener{
 
     @Override
     public void onRelease(Car car){
-//        for(Car cars: car){
-////            visitors.visit(car);
-//        }
     }
 
     public void addVisitor(Visitor visitor){

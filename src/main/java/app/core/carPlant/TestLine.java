@@ -1,25 +1,27 @@
 package app.core.carPlant;
 
-import app.patterns.listener.CarListener;
+import app.patterns.visitor.Visitor;
 
 import java.util.HashSet;
 import java.util.Set;
 
 public class TestLine {
 
+    private Set<Visitor> visitors = new HashSet<>();
     private Set<Car> cars = new HashSet<>();
-    private Set<CarListener> listeners = new HashSet<>();
 
-    public void addCar(Car queuedCar) {
-        this.cars.add(queuedCar);
-        for(CarListener listener : listeners) {
-            listener.onRelease(queuedCar);
-        }
-
+    public void addVisitor(Visitor visitor){
+        this.visitors.add(visitor);
     }
-//
-//    public void addListener(CarListener listener) {
-//        this.visitors.add(listener);
-//    }
 
+    public void addCar(Car car){
+        this.cars.add(car);
+        for(Visitor visitor : visitors){
+            visitor.visit(car);
+        }
+    }
+
+    public void resetTest(){
+        visitors.clear();
+    }
 }
