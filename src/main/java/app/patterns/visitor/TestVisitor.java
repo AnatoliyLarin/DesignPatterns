@@ -66,7 +66,7 @@ public class TestVisitor {
 
         for (Car car : cars) {
             System.out.println("------------- check started ------------------------");
-            checkTestLine.addCar(car);
+            checkTestLine.addCarUsingVisitors(car);
             System.out.println("------------- check finished ------------------------\n");
         }
 
@@ -79,7 +79,7 @@ public class TestVisitor {
 
         for (Car car : cars) {
             System.out.println("------------- check started ------------------------");
-            checkTestLine.addCar(car);
+            checkTestLine.addCarUsingVisitors(car);
             System.out.println("------------- check finished ------------------------\n");
         }
     }

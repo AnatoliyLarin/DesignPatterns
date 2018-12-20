@@ -11,9 +11,15 @@ public class CarTestListener implements CarListener{
 
     @Override
     public void onRelease(Car car){
+        System.out.println("----------------------------------");
+        System.out.println("Listener - CarTestListener");
+        System.out.println("----------------------------------");
+        for(Visitor visitor : visitors){
+            visitor.visit(car);
+        }
     }
 
-    public void addVisitor(Visitor visitor){
+    public void addVisitors(Visitor visitor){
         this.visitors.add(visitor);
     }
 }
