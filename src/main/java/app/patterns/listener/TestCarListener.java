@@ -70,7 +70,7 @@ public class TestCarListener {
                 .numberOfSeats(3)
                 .build();
 
-        // Make a call on listeners
+        // Add a car to a cars' line
         cars.add(car1);
         cars.add(car2);
         cars.add(car3);
