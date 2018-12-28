@@ -1,13 +1,14 @@
 package app.core.carPlant;
 
 
+import app.core.carPlant.interfaces.BaseCar;
 import app.core.carPlant.interfaces.Break;
 import app.core.carPlant.interfaces.Gear;
 import app.core.carPlant.interfaces.Wheel;
 import app.patterns.visitor.Visitable;
 import app.patterns.visitor.Visitor;
 
-public class Car implements Visitable{
+public class Car implements Visitable, BaseCar {
 
     private Gear gearType;
     private Wheel wheelType;
@@ -29,6 +30,20 @@ public class Car implements Visitable{
         this.numberOfSeats = carToBuild.numberOfSeats;
         this.width = carToBuild.width;
         this.height = carToBuild.height;
+    }
+
+    //General methods
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    @Override
+    public String getCarType(){
+        String carType = "Concrete car class";
+        System.out.println("Base car");
+        return carType;
     }
 
     public static class Builder{
@@ -90,13 +105,6 @@ public class Car implements Visitable{
         public Car build(){
            return new Car(this);
         }
-    }
-
-    //General methods
-
-    @Override
-    public void accept(Visitor visitor) {
-        visitor.visit(this);
     }
 
     //Getters
